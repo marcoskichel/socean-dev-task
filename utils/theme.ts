@@ -1,5 +1,4 @@
-import { createTheme, Theme } from "@mui/material";
-import { red } from "@mui/material/colors";
+import { createTheme, Theme } from '@mui/material';
 
 const theme: Theme = createTheme({
   palette: {
@@ -10,8 +9,8 @@ const theme: Theme = createTheme({
       main: '#A7A7A7',
     },
     action: {
-      disabled: '#5C5C5C'
-    }
+      disabled: '#5C5C5C',
+    },
   },
 });
 

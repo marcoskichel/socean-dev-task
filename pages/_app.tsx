@@ -1,5 +1,5 @@
-import '../styles/globals.css'
-import type { AppProps } from 'next/app'
+import '../styles/globals.css';
+import type { AppProps } from 'next/app';
 import createEmotionCache from '../utils/createEmotionCache';
 import { CacheProvider } from '@emotion/react';
 import Head from 'next/head';
@@ -10,7 +10,11 @@ import theme from '../utils/theme';
 // Client-side cache, shared for the whole session of the user in the browser.
 const clientSideEmotionCache = createEmotionCache();
 
-function CustomApp({ Component, emotionCache = clientSideEmotionCache, pageProps }: AppProps) {
+function CustomApp({
+  Component,
+  emotionCache = clientSideEmotionCache,
+  pageProps,
+}: AppProps) {
   return (
     <CacheProvider value={emotionCache}>
       <Head>
@@ -22,7 +26,7 @@ function CustomApp({ Component, emotionCache = clientSideEmotionCache, pageProps
         <Component {...pageProps} />
       </ThemeProvider>
     </CacheProvider>
-  )
+  );
 }
 
-export default CustomApp
+export default CustomApp;

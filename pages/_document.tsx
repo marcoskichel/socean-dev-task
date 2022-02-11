@@ -1,11 +1,13 @@
 import { DetailedHTMLProps, StyleHTMLAttributes } from 'react';
-import Document, { Html, Head, Main, NextScript } from 'next/document'
+import Document, { Html, Head, Main, NextScript } from 'next/document';
 import createEmotionCache from '../utils/createEmotionCache';
 import createEmotionServer from '@emotion/server/create-instance';
-import { EmotionCache } from '@emotion/cache';
 
 interface Props {
-  emotionStyleTags: DetailedHTMLProps<StyleHTMLAttributes<HTMLStyleElement>, HTMLStyleElement>
+  emotionStyleTags: DetailedHTMLProps<
+    StyleHTMLAttributes<HTMLStyleElement>,
+    HTMLStyleElement
+  >;
 }
 
 class AppDocument extends Document<Props> {
@@ -28,7 +30,7 @@ class AppDocument extends Document<Props> {
           <NextScript />
         </body>
       </Html>
-    )
+    );
   }
 }
 
@@ -89,4 +91,4 @@ AppDocument.getInitialProps = async (ctx) => {
   };
 };
 
-export default AppDocument
+export default AppDocument;
