@@ -1,6 +1,6 @@
 import { DetailedHTMLProps, StyleHTMLAttributes } from 'react';
 import Document, { Html, Head, Main, NextScript } from 'next/document';
-import createEmotionCache from '../utils/createEmotionCache';
+import createEmotionCache from '../styles/createEmotionCache';
 import createEmotionServer from '@emotion/server/create-instance';
 
 interface Props {
@@ -68,7 +68,8 @@ AppDocument.getInitialProps = async (ctx) => {
     originalRenderPage({
       enhanceApp: (App) =>
         function EnhanceApp(props) {
-          return <App emotionCache={cache} {...props} />;
+          const CustomApp = App as any;
+          return <CustomApp emotionCache={cache} {...props} />;
         },
     });
 
