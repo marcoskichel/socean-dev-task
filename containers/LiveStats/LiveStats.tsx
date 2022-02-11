@@ -1,15 +1,31 @@
-import { Box } from '@mui/material';
+import { styled } from '@mui/material';
 import StatsItem from '../../components/StatsItem/StatsItem';
 
-const data = [{ title: 'Total Value Locked' }, { title: 'SOL/scnSOL in Pool' }];
+const data = [
+  {
+    title: 'Total Value Locked',
+    value: '$61.70M USD',
+    hint: 'SOL/USD: $87.9800',
+  },
+  { title: 'SOL/scnSOL in Pool', value: '701.31K SOL', hint: '684,440 scnSOL' },
+];
+
+const Container = styled('div')(() => ({
+  display: 'flex',
+}));
 
 const LiveStats = () => {
   return (
-    <Box sx={{ display: 'flex' }}>
+    <Container>
       {data.map((item) => (
-        <StatsItem key={item.title} title={item.title} />
+        <StatsItem
+          key={item.title}
+          title={item.title}
+          value={item.value}
+          hint={item.hint}
+        />
       ))}
-    </Box>
+    </Container>
   );
 };
 
