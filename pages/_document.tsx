@@ -17,7 +17,7 @@ class AppDocument extends Document<Props> {
         <Head>
           <link
             rel="stylesheet"
-            href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+            href="https://fonts.googleapis.com/css?family=Manrope:300,400,500,700&display=swap"
           />
           <link
             rel="stylesheet"
