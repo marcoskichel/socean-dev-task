@@ -1,7 +1,26 @@
 import { LinearProgress, styled, Typography } from '@mui/material';
 import { LiveStats } from '../../providers/LiveStatsProvider';
 
-// Styles
+const ProgressRoot = styled('div')(() => ({
+  height: '4.75rem',
+  display: 'grid',
+  alignItems: 'center',
+}));
+
+/**
+ * Renders the progress bar or a placeholder if the value is not available.
+ */
+const Progress = (props: { value?: number }) => {
+  const { value } = props;
+
+  return (
+    <ProgressRoot>
+      {value && (
+        <LinearProgress variant="determinate" value={value} color="secondary" />
+      )}
+    </ProgressRoot>
+  );
+};
 
 const Root = styled('div')(({ theme }) => ({
   padding: '2rem',
@@ -25,28 +44,7 @@ const Root = styled('div')(({ theme }) => ({
   },
 }));
 
-const ProgressRoot = styled('div')(() => ({
-  height: '4.75rem',
-  display: 'grid',
-  alignItems: 'center',
-}));
-
-// Component
-
 type Props = LiveStats;
-
-/**
- * Renders the progress bar or a placeholder if the value is not available.
- */
-const Progress = (props: { value?: number }) => {
-  const { value } = props;
-
-  return (
-    <ProgressRoot>
-      {value && <LinearProgress variant="determinate" value={value} />}
-    </ProgressRoot>
-  );
-};
 
 /**
  * A component that renders live stats information.

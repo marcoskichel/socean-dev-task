@@ -14,9 +14,14 @@ const theme: Theme = createTheme({
   },
   palette: {
     mode: 'dark',
+    background: {
+      paper: '#232323',
+    },
     primary: {
+      main: '#FFFFFF',
+    },
+    secondary: {
       main: '#F24F83',
-      light: 'blue',
     },
     text: {
       primary: '#FFFFFF',
