@@ -2,14 +2,20 @@ import { styled } from '@mui/material';
 import StatsItem from '../../components/StatsItem/StatsItem';
 import { useLiveStats } from '../../providers/LiveStatsProvider';
 
-const Container = styled('div')(() => ({
+const Root = styled('div')(({ theme }) => ({
   display: 'flex',
+  flexWrap: 'wrap',
+  width: '100%',
+  gap: '1rem',
+  [theme.breakpoints.up('md')]: {
+    gap: 0,
+  },
 }));
 
 const LiveStats = () => {
   const { stats } = useLiveStats();
   return (
-    <Container>
+    <Root>
       {stats.map((item) => (
         <StatsItem
           key={item.title}
@@ -18,7 +24,7 @@ const LiveStats = () => {
           hint={item.hint}
         />
       ))}
-    </Container>
+    </Root>
   );
 };
 

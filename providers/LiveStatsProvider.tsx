@@ -34,6 +34,21 @@ const LiveStatsProvider = (props: LiveStatsProviderProps) => {
           value: '701.31K SOL',
           hint: '684,440 scnSOL',
         },
+        {
+          title: '7D APY',
+          value: '6.08%',
+          hint: '12H APY: 7.14%',
+        },
+        {
+          title: 'SOL/scnSOL Price',
+          value: '1.0247 SOL',
+          hint: '= 1 scnSOL',
+        },
+        {
+          title: 'EPOCH 272',
+          value: '19%',
+          hint: 'ETA: 2d 5h 16m 10s',
+        },
       ],
     }),
     [],
