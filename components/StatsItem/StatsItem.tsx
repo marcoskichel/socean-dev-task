@@ -1,9 +1,15 @@
-import { styled, Typography } from '@mui/material';
+import { LinearProgress, styled, Typography } from '@mui/material';
+import { LiveStats } from '../../providers/LiveStatsProvider';
+
+// Styles
 
 const Root = styled('div')(({ theme }) => ({
   padding: '2rem',
   border: '1px solid #171717',
   borderRadius: '1.5rem',
+  display: 'flex',
+  flexDirection: 'column',
+  justifyContent: 'space-between',
   flexBasis: 0,
   flexGrow: 1,
   [theme.breakpoints.up('md')]: {
@@ -19,26 +25,45 @@ const Root = styled('div')(({ theme }) => ({
   },
 }));
 
-interface Props {
-  title: string;
-  value: string;
-  hint: string;
-}
+const ProgressRoot = styled('div')(() => ({
+  height: '4.75rem',
+  display: 'grid',
+  alignItems: 'center',
+}));
 
-const titleSx = {
-  marginBottom: '4.75rem',
-  color: 'secondary.main',
+// Component
+
+type Props = LiveStats;
+
+/**
+ * Renders the progress bar or a placeholder if the value is not available.
+ */
+const Progress = (props: { value?: number }) => {
+  const { value } = props;
+
+  return (
+    <ProgressRoot>
+      {value && <LinearProgress variant="determinate" value={value} />}
+    </ProgressRoot>
+  );
 };
 
+/**
+ * A component that renders live stats information.
+ */
 const StatsItem = (props: Props) => {
-  const { title, value, hint } = props;
+  const { title, value, hint, progress } = props;
+
   return (
     <Root>
-      <Typography variant="h6" sx={titleSx}>
+      <Typography color="text.secondary" variant="h6">
         {title}
       </Typography>
+      <Progress value={progress} />
       <Typography variant="h5">{value}</Typography>
-      <Typography variant="overline">{hint}</Typography>
+      <Typography color="text.secondary" variant="overline">
+        {hint}
+      </Typography>
     </Root>
   );
 };

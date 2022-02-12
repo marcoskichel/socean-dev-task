@@ -1,9 +1,10 @@
 import { createContext, useContext, useMemo } from 'react';
 
-interface LiveStats {
+export interface LiveStats {
   title: string;
   value: string;
   hint: string;
+  progress?: number;
 }
 
 interface LiveStatsContextProps {
@@ -48,6 +49,7 @@ const LiveStatsProvider = (props: LiveStatsProviderProps) => {
           title: 'EPOCH 272',
           value: '19%',
           hint: 'ETA: 2d 5h 16m 10s',
+          progress: 19,
         },
       ],
     }),

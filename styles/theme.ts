@@ -1,9 +1,4 @@
-import {
-  createTheme,
-  PaletteOptions,
-  Theme,
-  ThemeOptions,
-} from '@mui/material';
+import { createTheme, PaletteOptions, Theme } from '@mui/material';
 
 export type CustomPallete = PaletteOptions & { bg: string };
 
@@ -18,18 +13,19 @@ const theme: Theme = createTheme({
     },
   },
   palette: {
-    bg: `#000000`,
     mode: 'dark',
     primary: {
-      main: '#FFFFFF',
+      main: '#F24F83',
+      light: 'blue',
     },
-    secondary: {
-      main: '#A7A7A7',
+    text: {
+      primary: '#FFFFFF',
+      secondary: '#A7A7A7',
     },
     action: {
       disabled: '#5C5C5C',
     },
   },
-} as unknown as ThemeOptions);
+});
 
 export default theme;
