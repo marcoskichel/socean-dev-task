@@ -1,10 +1,8 @@
 import { styled, Typography } from '@mui/material';
-import { CustomPallete } from '../../styles/theme';
 
 const Container = styled('div')(({ theme }) => ({
   padding: '2rem',
-  border: '1px solid #A7A7A7',
-  backgroundColor: (theme as unknown as CustomPallete).bg,
+  border: '1px solid #171717',
   borderRadius: '1.5rem',
   gap: '1rem',
   [theme.breakpoints.up('md')]: {

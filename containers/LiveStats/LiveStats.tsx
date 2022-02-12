@@ -1,23 +1,16 @@
 import { styled } from '@mui/material';
 import StatsItem from '../../components/StatsItem/StatsItem';
-
-const data = [
-  {
-    title: 'Total Value Locked',
-    value: '$61.70M USD',
-    hint: 'SOL/USD: $87.9800',
-  },
-  { title: 'SOL/scnSOL in Pool', value: '701.31K SOL', hint: '684,440 scnSOL' },
-];
+import { useLiveStats } from '../../providers/LiveStatsProvider';
 
 const Container = styled('div')(() => ({
   display: 'flex',
 }));
 
 const LiveStats = () => {
+  const { stats } = useLiveStats();
   return (
     <Container>
-      {data.map((item) => (
+      {stats.map((item) => (
         <StatsItem
           key={item.title}
           title={item.title}
