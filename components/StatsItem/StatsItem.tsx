@@ -1,4 +1,5 @@
-import { styled, Typography } from '@mui/material';
+import { LinearProgress, styled, Typography } from '@mui/material';
+import { LiveStats } from '../../providers/LiveStatsProvider';
 
 const Root = styled('div')(({ theme }) => ({
   padding: '2rem',
@@ -19,26 +20,30 @@ const Root = styled('div')(({ theme }) => ({
   },
 }));
 
-interface Props {
-  title: string;
-  value: string;
-  hint: string;
-}
+type Props = LiveStats;
 
 const titleSx = {
   marginBottom: '4.75rem',
-  color: 'secondary.main',
 };
 
+const ProgressPlaceholder = () => <div></div>;
+
 const StatsItem = (props: Props) => {
-  const { title, value, hint } = props;
+  const { title, value, hint, progress } = props;
   return (
     <Root>
-      <Typography variant="h6" sx={titleSx}>
+      <Typography color="text.secondary" variant="h6" sx={titleSx}>
         {title}
       </Typography>
+      {progress ? (
+        <LinearProgress variant="determinate" value={progress} />
+      ) : (
+        <ProgressPlaceholder />
+      )}
       <Typography variant="h5">{value}</Typography>
-      <Typography variant="overline">{hint}</Typography>
+      <Typography color="text.secondary" variant="overline">
+        {hint}
+      </Typography>
     </Root>
   );
 };

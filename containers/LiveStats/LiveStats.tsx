@@ -22,6 +22,7 @@ const LiveStats = () => {
           title={item.title}
           value={item.value}
           hint={item.hint}
+          progress={item.progress}
         />
       ))}
     </Root>
