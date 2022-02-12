@@ -5,6 +5,9 @@ const Root = styled('div')(({ theme }) => ({
   padding: '2rem',
   border: '1px solid #171717',
   borderRadius: '1.5rem',
+  display: 'flex',
+  flexDirection: 'column',
+  justifyContent: 'space-between',
   flexBasis: 0,
   flexGrow: 1,
   [theme.breakpoints.up('md')]: {
@@ -20,26 +23,35 @@ const Root = styled('div')(({ theme }) => ({
   },
 }));
 
+const ProgressRoot = styled('div')(() => ({
+  height: '4.75rem',
+  display: 'grid',
+  alignItems: 'center',
+}));
+
 type Props = LiveStats;
 
-const titleSx = {
-  marginBottom: '4.75rem',
-};
+const Progress = (props: { value?: number }) => {
+  const { value } = props;
 
-const ProgressPlaceholder = () => <div></div>;
+  return (
+    <ProgressRoot>
+      <div>
+        {value && <LinearProgress variant="determinate" value={value} />}
+      </div>
+    </ProgressRoot>
+  );
+};
 
 const StatsItem = (props: Props) => {
   const { title, value, hint, progress } = props;
+
   return (
     <Root>
-      <Typography color="text.secondary" variant="h6" sx={titleSx}>
+      <Typography color="text.secondary" variant="h6">
         {title}
       </Typography>
-      {progress ? (
-        <LinearProgress variant="determinate" value={progress} />
-      ) : (
-        <ProgressPlaceholder />
-      )}
+      <Progress value={progress} />
       <Typography variant="h5">{value}</Typography>
       <Typography color="text.secondary" variant="overline">
         {hint}
