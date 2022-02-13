@@ -1,4 +1,4 @@
-import { styled } from '@mui/material';
+import { styled, SxProps, Theme } from '@mui/material';
 import Image from 'next/image';
 
 const Wrapper = styled('div')(() => ({
@@ -13,6 +13,9 @@ export enum Currency {
 
 interface Props {
   currency: Currency;
+  height?: number;
+  width?: number;
+  sx?: SxProps<Theme>;
 }
 
 const getSrc = (currency: Currency) => {
@@ -27,11 +30,11 @@ const getSrc = (currency: Currency) => {
 };
 
 const CurrencyIcon = (props: Props) => {
-  const { currency } = props;
+  const { currency, sx, height = 32, width = 32 } = props;
   const src = getSrc(currency);
   return (
-    <Wrapper>
-      <Image src={src} alt="Currency" width={32} height={32} />
+    <Wrapper sx={sx}>
+      <Image src={src} alt="Currency" width={width} height={height} />
     </Wrapper>
   );
 };

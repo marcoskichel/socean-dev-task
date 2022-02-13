@@ -15,6 +15,8 @@ class AppDocument extends Document<Props> {
     return (
       <Html>
         <Head>
+          <meta name="description" content="Socean stake" />
+          <link rel="icon" href="/favicon.ico" />
           <link
             rel="stylesheet"
             href="https://fonts.googleapis.com/css?family=Manrope:300,400,500,700&display=swap"

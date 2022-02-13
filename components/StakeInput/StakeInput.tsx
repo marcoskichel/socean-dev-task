@@ -1,11 +1,11 @@
+import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 import {
+  Button,
+  InputLabel,
   styled,
   TextField,
-  InputLabel,
   Typography,
-  Button,
 } from '@mui/material';
-import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 import CurrencyIcon, { Currency } from '../CurrencyIcon/CurrencyIcon';
 
 // Styles
@@ -17,11 +17,11 @@ const Wrapper = styled('div')(() => ({
 
 const StyledTextField = styled(TextField)(() => ({
   'input::-webkit-outer-spin-button, input::-webkit-inner-spin-button': {
-    '-webkit-appearance': 'none',
+    WebkitAppearance: 'none',
     margin: 0,
   },
   'input[type=number]': {
-    '-moz-appearance': 'textfield',
+    MozAppearance: 'textfield',
     fontSize: '1.5rem',
     color: '#A7A7A7',
   },
@@ -29,6 +29,7 @@ const StyledTextField = styled(TextField)(() => ({
     backgroundColor: '#1C1C1C',
     height: '7rem',
     alignItems: 'end',
+    borderRadius: '0.75rem',
   },
   '.MuiInputLabel-formControl': {
     top: '-1.5rem',

@@ -9,7 +9,7 @@ import LiveStatsProvider from '../providers/LiveStatsProvider';
 const Main = styled(Container)(() => ({
   display: 'flex',
   flexDirection: 'column',
-  paddingTop: '4rem',
+  padding: '4rem 0',
 }));
 
 const TabbedCardContainer = styled('div')(() => ({
@@ -24,13 +24,48 @@ const PageHeaderContainer = styled('div')(() => ({
   margin: '0 auto',
 }));
 
+const FooterContainer = styled('div')(() => ({
+  display: 'flex',
+  flexDirection: 'column',
+  padding: '1.25rem',
+}));
+
+const FooterItem = styled('div')(() => ({
+  display: 'flex',
+  justifyContent: 'space-between',
+  marginBottom: '0.5rem',
+}));
+
+const FooterLabel = styled(Typography)(() => ({
+  fontWeight: 400,
+  fontSize: '1.125rem',
+}));
+
+const FooterValue = styled(Typography)(() => ({
+  fontWeight: 600,
+  fontSize: '1.125rem',
+}));
+
+const Footer = () => {
+  return (
+    <FooterContainer>
+      <FooterItem>
+        <FooterLabel>Exchange rate:</FooterLabel>
+        <FooterValue>1 SOL = 0.976 scnSOL</FooterValue>
+      </FooterItem>
+      <FooterItem>
+        <FooterLabel>Deposit fees:</FooterLabel>
+        <FooterValue>0.15%</FooterValue>
+      </FooterItem>
+    </FooterContainer>
+  );
+};
+
 const Home: NextPage = () => {
   return (
     <div>
       <Head>
         <title>Socean</title>
-        <meta name="description" content="Socean stake" />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <Main>
@@ -51,6 +86,7 @@ const Home: NextPage = () => {
                 { label: 'Two', Component: () => <div>Two</div> },
               ]}
             />
+            <Footer />
           </Box>
           <div />
         </TabbedCardContainer>
