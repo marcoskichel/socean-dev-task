@@ -10,3 +10,4 @@ decisions:
   2. I like the idea of having the CSS and JS code in the same file, as long as the component remains small and self-contained, IMO it makes the overall experience a lot better without the need to navigate through multiple files to understand how the styles applies to each component.
 
 - To separate the data provision from the components/containers: Even though this project consists of just a POC, I decided to write it as if it would be extended in the future, with that said I moved the data provision layer to separated context provider components so that it could be consumed in the future by other components interested in that kind of data.
+

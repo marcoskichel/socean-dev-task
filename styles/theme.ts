@@ -5,11 +5,20 @@ export type CustomPallete = PaletteOptions & { bg: string };
 const theme: Theme = createTheme({
   typography: {
     fontFamily: '"Manrope", "Helvetica", "Arial", sans-serif',
+    h1: {
+      fontWeight: 700,
+      fontSize: '2.5rem',
+      marginTop: '6rem',
+      marginBottom: '1rem',
+    },
     h6: {
       fontWeight: 700,
-      fontSize: '16px',
-      lineHeight: '22px',
+      fontSize: '1rem',
+      lineHeight: '1.5rem',
       letter: '-1%',
+    },
+    button: {
+      textTransform: 'none',
     },
   },
   palette: {

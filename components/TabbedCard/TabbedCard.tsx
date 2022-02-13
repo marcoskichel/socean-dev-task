@@ -1,6 +1,18 @@
 import { Card, CardContent, styled, Tab, Tabs } from '@mui/material';
 import { ReactElement, SyntheticEvent, useState } from 'react';
 
+const StyledCard = styled(Card)(() => ({
+  borderRadius: '1.5rem',
+  '> div': { padding: 0 },
+}));
+
+const StyledTabs = styled(Tabs)(() => ({
+  '.MuiTabs-indicator': { display: 'none' },
+  '.MuiTab-root[aria-selected="false"]': {
+    backgroundColor: '#181818',
+  },
+}));
+
 interface TabData {
   label: string;
   Component: () => ReactElement;
@@ -9,21 +21,6 @@ interface TabData {
 interface Props {
   tabs: TabData[];
 }
-
-const StyledCard = styled(Card)(() => ({
-  borderRadius: '1.5rem',
-  '> div': { padding: 0 },
-}));
-
-const StyledTabs = styled(Tabs)(() => ({
-  '.MuiTabs-indicator': { display: 'none' },
-  '.MuiTab-root': {
-    textTransform: 'none',
-  },
-  '.MuiTab-root[aria-selected="false"]': {
-    backgroundColor: '#181818',
-  },
-}));
 
 /**
  * A card with tabs
