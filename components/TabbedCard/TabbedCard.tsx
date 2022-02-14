@@ -2,7 +2,6 @@ import { Card, CardContent, styled, Tab, Tabs } from '@mui/material';
 import { ReactElement, SyntheticEvent, useState, ReactNode } from 'react';
 
 const StyledCard = styled(Card)(() => ({
-  borderRadius: '1.5rem',
   '> div': { padding: 0 },
 }));
 

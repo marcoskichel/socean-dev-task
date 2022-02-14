@@ -1,10 +1,13 @@
 import { Box, Container, styled, Typography, Chip } from '@mui/material';
 import type { NextPage } from 'next';
 import Head from 'next/head';
+import StakingInfoCard from '../components/StakingInfoCard/StakingInfoCard';
 import TabbedCard from '../components/TabbedCard/TabbedCard';
 import LiveStats from '../containers/LiveStats/LiveStats';
 import Staker from '../containers/Staker/Staker';
 import LiveStatsProvider from '../providers/LiveStatsProvider';
+
+// Styles
 
 const Main = styled(Container)(() => ({
   display: 'flex',
@@ -12,10 +15,16 @@ const Main = styled(Container)(() => ({
   padding: '4rem 0',
 }));
 
-const TabbedCardContainer = styled('div')(() => ({
+const ContentSection = styled('section')(({ theme }) => ({
   width: '100%',
   display: 'flex',
-  justifyContent: 'space-between',
+  justifyContent: 'right',
+  gap: '1rem',
+  flexDirection: 'column',
+  [theme.breakpoints.up('md')]: {
+    flexDirection: 'row',
+    padding: '0 1.5rem',
+  },
 }));
 
 const PageHeaderContainer = styled('div')(() => ({
@@ -57,6 +66,8 @@ const StyledChip = styled(Chip)(() => ({
   fontSize: '0.75rem',
 }));
 
+// Components
+
 const Footer = () => {
   return (
     <FooterContainer>
@@ -97,9 +108,8 @@ const Home: NextPage = () => {
           <Typography variant="h1">Stake SOL and Earn 6% APY</Typography>
         </PageHeaderContainer>
 
-        <TabbedCardContainer>
-          <div />
-          <Box sx={{ width: '33rem' }}>
+        <ContentSection>
+          <Box>
             <TabbedCard
               tabs={[
                 { label: <StakeLabel />, Component: Staker },
@@ -108,8 +118,8 @@ const Home: NextPage = () => {
             />
             <Footer />
           </Box>
-          <div />
-        </TabbedCardContainer>
+          <StakingInfoCard />
+        </ContentSection>
       </Main>
     </div>
   );

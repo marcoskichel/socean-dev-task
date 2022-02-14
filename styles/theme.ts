@@ -17,8 +17,23 @@ const theme: Theme = createTheme({
       lineHeight: '1.5rem',
       letter: '-1%',
     },
+    body1: {
+      fontWeight: 400,
+      fontSize: '0.875rem',
+      lineHeight: '1rem',
+      color: '#A7A7A7',
+    },
     button: {
       textTransform: 'none',
+    },
+  },
+  components: {
+    MuiCard: {
+      defaultProps: {
+        sx: {
+          borderRadius: '1.5rem',
+        },
+      },
     },
   },
   palette: {

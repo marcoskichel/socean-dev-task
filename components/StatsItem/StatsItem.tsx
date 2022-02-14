@@ -58,7 +58,7 @@ const StatsItem = (props: Props) => {
         {title}
       </Typography>
       <Progress value={progress} />
-      <Typography variant="h5">{value}</Typography>
+      <Typography variant="h6">{value}</Typography>
       <Typography color="text.secondary" variant="overline">
         {hint}
       </Typography>

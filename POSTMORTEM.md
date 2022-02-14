@@ -12,3 +12,8 @@ decisions:
 - To separate the data provision from the components/containers: Even though this project consists of just a POC, I decided to write it as if it would be extended in the future, with that said I moved the data provision layer to separated context provider components so that it could be consumed in the future by other components interested in that kind of data.
 
 - I decided to keep the tab text centralized because it is more aligned with material design standards (sorry, but it hurts to see them not centered :sweat).
+
+
+Possible improvements:
+
+- Some of the MUI custom styles could have been done in the theme under `components.<componentName>.defaultProps.sx` for normalization sake.
