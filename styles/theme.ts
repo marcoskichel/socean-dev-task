@@ -34,6 +34,17 @@ const theme: Theme = createTheme({
         },
       },
     },
+    MuiListItemButton: {
+      defaultProps: {
+        sx: {
+          borderRadius: '0.75rem',
+          backgroundColor: '#333333',
+          '&:not(:last-child)': {
+            marginBottom: '0.5rem',
+          },
+        },
+      },
+    },
   },
   palette: {
     mode: 'dark',

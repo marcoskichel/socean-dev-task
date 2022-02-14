@@ -5,6 +5,7 @@ import StakingInfoCard from '../components/StakingInfoCard/StakingInfoCard';
 import TabbedCard from '../components/TabbedCard/TabbedCard';
 import LiveStats from '../containers/LiveStats/LiveStats';
 import Staker from '../containers/Staker/Staker';
+import Unstaker from '../containers/Unstaker/Unstaker';
 import LiveStatsProvider from '../providers/LiveStatsProvider';
 
 // Styles
@@ -42,17 +43,18 @@ const FooterContainer = styled('div')(() => ({
 const FooterItem = styled('div')(() => ({
   display: 'flex',
   justifyContent: 'space-between',
-  marginBottom: '0.5rem',
+  marginBottom: '0.75rem',
 }));
 
 const FooterLabel = styled(Typography)(() => ({
   fontWeight: 400,
-  fontSize: '1.125rem',
+  color: '#A7A7A7',
+  fontSize: '1rem',
 }));
 
 const FooterValue = styled(Typography)(() => ({
   fontWeight: 600,
-  fontSize: '1.125rem',
+  fontSize: '1rem',
 }));
 
 const StakeLabelWrapper = styled('div')(() => ({
@@ -113,7 +115,7 @@ const Home: NextPage = () => {
             <TabbedCard
               tabs={[
                 { label: <StakeLabel />, Component: Staker },
-                { label: 'Unstake', Component: () => <div>Two</div> },
+                { label: 'Unstake', Component: Unstaker },
               ]}
             />
             <Footer />
