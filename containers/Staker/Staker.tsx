@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import CurrencyIcon, {
   Currency,
 } from '../../components/CurrencyIcon/CurrencyIcon';
+import FatButton from '../../components/FatButton/FatButton';
 import StakeInput from '../../components/StakeInput/StakeInput';
 
 const Root = styled('div')(() => ({
@@ -16,7 +17,7 @@ const OutcomeWrapper = styled('div')(() => ({
   display: 'flex',
   justifyContent: 'space-between',
   fontSize: '1.25rem',
-  padding: '0 0.5rem',
+  padding: '0 0.5rem 0 0',
   height: '1rem',
   '> div': {
     lineHeight: '2rem',
@@ -67,14 +68,14 @@ const Staker = () => {
         onChange={handleChange}
       />
       <Outcome value={outcome} />
-      <Button
+      <FatButton
         color="secondary"
         variant="contained"
         size="large"
         disableElevation
       >
         Connect Wallet
-      </Button>
+      </FatButton>
     </Root>
   );
 };

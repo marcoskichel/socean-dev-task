@@ -13,6 +13,12 @@ const StyledTabs = styled(Tabs)(() => ({
   },
 }));
 
+const StyledCardContent = styled(CardContent)(() => ({
+  '> *': {
+    paddingBottom: 0,
+  },
+}));
+
 interface TabData {
   label: string | ReactNode;
   Component: () => ReactElement;
@@ -37,7 +43,7 @@ const TabbedCard = (props: Props) => {
 
   return (
     <StyledCard>
-      <CardContent>
+      <StyledCardContent>
         <StyledTabs
           variant="fullWidth"
           value={currentTab}
@@ -48,7 +54,7 @@ const TabbedCard = (props: Props) => {
           ))}
         </StyledTabs>
         {CurrentTabContent && <CurrentTabContent />}
-      </CardContent>
+      </StyledCardContent>
     </StyledCard>
   );
 };
