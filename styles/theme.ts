@@ -21,7 +21,6 @@ const theme: Theme = createTheme({
       fontWeight: 400,
       fontSize: '0.875rem',
       lineHeight: '1rem',
-      color: '#A7A7A7',
     },
     button: {
       textTransform: 'none',

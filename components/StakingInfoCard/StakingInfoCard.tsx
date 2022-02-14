@@ -1,4 +1,4 @@
-import { Card, CardContent, styled, Box, Typography } from '@mui/material';
+import { Card, CardContent, styled, Typography, useTheme } from '@mui/material';
 import InfoIcon from '@mui/icons-material/InfoOutlined';
 
 const StyledCard = styled(Card)(({ theme }) => ({
@@ -10,7 +10,7 @@ const StyledCard = styled(Card)(({ theme }) => ({
   },
 }));
 
-const StyledCardContent = styled(CardContent)(({ theme }) => ({
+const StyledCardContent = styled(CardContent)(() => ({
   padding: '2rem',
   display: 'flex',
   flexDirection: 'column',
@@ -18,6 +18,8 @@ const StyledCardContent = styled(CardContent)(({ theme }) => ({
 }));
 
 const StakingInfoCard = () => {
+  const theme = useTheme();
+
   return (
     <StyledCard>
       <StyledCardContent>
@@ -25,7 +27,7 @@ const StakingInfoCard = () => {
         <Typography variant="h6" color="primary">
           How does staking work?
         </Typography>
-        <Typography variant="body1">
+        <Typography variant="body1" color={theme.palette.text.secondary}>
           Staking allows users to participate in securing the network by locking
           up tokens. Consequently, users are rewarded for securing the network
           in the form of native tokens. The higher the amount of crypto-assets
