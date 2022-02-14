@@ -1,4 +1,4 @@
-import { Box, Container, styled, Typography } from '@mui/material';
+import { Box, Container, styled, Typography, Chip } from '@mui/material';
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import TabbedCard from '../components/TabbedCard/TabbedCard';
@@ -46,6 +46,17 @@ const FooterValue = styled(Typography)(() => ({
   fontSize: '1.125rem',
 }));
 
+const StakeLabelWrapper = styled('div')(() => ({
+  display: 'flex',
+  gap: '0.75rem',
+}));
+
+const StyledChip = styled(Chip)(() => ({
+  backgroundColor: '#22392F',
+  color: '#17FF9E',
+  fontSize: '0.75rem',
+}));
+
 const Footer = () => {
   return (
     <FooterContainer>
@@ -58,6 +69,15 @@ const Footer = () => {
         <FooterValue>0.15%</FooterValue>
       </FooterItem>
     </FooterContainer>
+  );
+};
+
+const StakeLabel = () => {
+  return (
+    <StakeLabelWrapper>
+      <Box>Stake</Box>
+      <StyledChip label="~6% APY" size="small" />
+    </StakeLabelWrapper>
   );
 };
 
@@ -82,8 +102,8 @@ const Home: NextPage = () => {
           <Box sx={{ width: '33rem' }}>
             <TabbedCard
               tabs={[
-                { label: 'Stake', Component: Staker },
-                { label: 'Two', Component: () => <div>Two</div> },
+                { label: <StakeLabel />, Component: Staker },
+                { label: 'Unstake', Component: () => <div>Two</div> },
               ]}
             />
             <Footer />

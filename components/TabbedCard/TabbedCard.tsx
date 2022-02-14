@@ -1,5 +1,5 @@
 import { Card, CardContent, styled, Tab, Tabs } from '@mui/material';
-import { ReactElement, SyntheticEvent, useState } from 'react';
+import { ReactElement, SyntheticEvent, useState, ReactNode } from 'react';
 
 const StyledCard = styled(Card)(() => ({
   borderRadius: '1.5rem',
@@ -14,7 +14,7 @@ const StyledTabs = styled(Tabs)(() => ({
 }));
 
 interface TabData {
-  label: string;
+  label: string | ReactNode;
   Component: () => ReactElement;
 }
 
@@ -44,7 +44,7 @@ const TabbedCard = (props: Props) => {
           onChange={handleTabChange}
         >
           {tabs.map((tab, index) => (
-            <Tab key={index} label={tab.label} />
+            <Tab key={index} label={tab.label} sx={{ fontSize: '1.125rem' }} />
           ))}
         </StyledTabs>
         {CurrentTabContent && <CurrentTabContent />}
