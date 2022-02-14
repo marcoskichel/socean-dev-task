@@ -1,4 +1,4 @@
-import { Box, Button, styled, Typography } from '@mui/material';
+import { Box, styled, Typography } from '@mui/material';
 import { useEffect, useState } from 'react';
 import CurrencyIcon, {
   Currency,

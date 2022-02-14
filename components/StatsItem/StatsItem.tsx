@@ -1,5 +1,5 @@
 import { LinearProgress, styled, Typography } from '@mui/material';
-import { LiveStats } from '../../providers/LiveStatsProvider';
+import { LiveStats } from '../../types/LiveStats';
 
 const ProgressRoot = styled('div')(() => ({
   height: '4.75rem',
@@ -58,7 +58,7 @@ const StatsItem = (props: Props) => {
         {title}
       </Typography>
       <Progress value={progress} />
-      <Typography variant="h6">{value}</Typography>
+      <Typography variant="h5">{value}</Typography>
       <Typography color="text.secondary" variant="overline">
         {hint}
       </Typography>

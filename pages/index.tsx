@@ -22,9 +22,9 @@ const ContentSection = styled('section')(({ theme }) => ({
   justifyContent: 'right',
   gap: '1rem',
   flexDirection: 'column',
+  padding: '0 1.5rem',
   [theme.breakpoints.up('md')]: {
     flexDirection: 'row',
-    padding: '0 1.5rem',
   },
 }));
 
