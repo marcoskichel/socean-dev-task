@@ -3,13 +3,13 @@ import { UnstakeOption } from '../../types/UnstakeOption';
 import UnstakeOptionListItem from './UnstakeOptionListItem';
 
 interface Props {
-  selectedId: string;
+  selectedId?: string;
   options: UnstakeOption[];
-  onChange: (value: string) => void;
+  onChange?: (value: string) => void;
 }
 
 const UnstakeOptionList = (props: Props) => {
-  const { options, onChange, selectedId } = props;
+  const { options, onChange = () => {}, selectedId } = props;
 
   const handleItemSelect = (optionId: string) => {
     onChange(optionId);

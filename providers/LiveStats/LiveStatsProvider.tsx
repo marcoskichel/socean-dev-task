@@ -1,5 +1,5 @@
 import { createContext, useContext, useMemo } from 'react';
-import { LiveStats } from '../types/LiveStats';
+import { LiveStats } from '../../types/LiveStats';
 
 interface LiveStatsContextProps {
   stats: LiveStats[];

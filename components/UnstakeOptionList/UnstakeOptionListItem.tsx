@@ -63,7 +63,7 @@ const UnstakeOptionListItem = (props: Props) => {
               width={26}
               currency={Currency.SOL}
             />
-            <Value variant="h5">{`${parseFloat(value.toFixed(2))} SOL`}</Value>
+            <Value variant="h5">{`${parseFloat(value.toString())} SOL`}</Value>
             <Typography variant="caption">{`${fee}% fee`}</Typography>
           </Description>
         </Content>

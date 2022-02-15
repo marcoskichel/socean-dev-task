@@ -7,7 +7,7 @@ import TabbedCard from '../components/TabbedCard/TabbedCard';
 import LiveStats from '../containers/LiveStats/LiveStats';
 import Staker from '../containers/Staker/Staker';
 import Unstaker from '../containers/Unstaker/Unstaker';
-import LiveStatsProvider from '../providers/LiveStatsProvider';
+import LiveStatsProvider from '../providers/LiveStats/LiveStatsProvider';
 
 // Styles
 

@@ -1,0 +1,133 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LiveStats renders 1`] = `
+<DocumentFragment>
+  <div
+    class="css-fgs0i6"
+  >
+    <div
+      class="css-fi8v5m"
+    >
+      <h6
+        class="MuiTypography-root MuiTypography-h6 css-1je6kat-MuiTypography-root"
+      >
+        Total Value Locked
+      </h6>
+      <div
+        class="css-1rhchyf"
+      />
+      <h5
+        class="MuiTypography-root MuiTypography-h5 css-hynxzr-MuiTypography-root"
+      >
+        $61.70M USD
+      </h5>
+      <span
+        class="MuiTypography-root MuiTypography-overline css-1vuxh5z-MuiTypography-root"
+      >
+        SOL/USD: $87.9800
+      </span>
+    </div>
+    <div
+      class="css-fi8v5m"
+    >
+      <h6
+        class="MuiTypography-root MuiTypography-h6 css-1je6kat-MuiTypography-root"
+      >
+        SOL/scnSOL in Pool
+      </h6>
+      <div
+        class="css-1rhchyf"
+      />
+      <h5
+        class="MuiTypography-root MuiTypography-h5 css-hynxzr-MuiTypography-root"
+      >
+        701.31K SOL
+      </h5>
+      <span
+        class="MuiTypography-root MuiTypography-overline css-1vuxh5z-MuiTypography-root"
+      >
+        684,440 scnSOL
+      </span>
+    </div>
+    <div
+      class="css-fi8v5m"
+    >
+      <h6
+        class="MuiTypography-root MuiTypography-h6 css-1je6kat-MuiTypography-root"
+      >
+        7D APY
+      </h6>
+      <div
+        class="css-1rhchyf"
+      />
+      <h5
+        class="MuiTypography-root MuiTypography-h5 css-hynxzr-MuiTypography-root"
+      >
+        6.08%
+      </h5>
+      <span
+        class="MuiTypography-root MuiTypography-overline css-1vuxh5z-MuiTypography-root"
+      >
+        12H APY: 7.14%
+      </span>
+    </div>
+    <div
+      class="css-fi8v5m"
+    >
+      <h6
+        class="MuiTypography-root MuiTypography-h6 css-1je6kat-MuiTypography-root"
+      >
+        SOL/scnSOL Price
+      </h6>
+      <div
+        class="css-1rhchyf"
+      />
+      <h5
+        class="MuiTypography-root MuiTypography-h5 css-hynxzr-MuiTypography-root"
+      >
+        1.0247 SOL
+      </h5>
+      <span
+        class="MuiTypography-root MuiTypography-overline css-1vuxh5z-MuiTypography-root"
+      >
+        = 1 scnSOL
+      </span>
+    </div>
+    <div
+      class="css-fi8v5m"
+    >
+      <h6
+        class="MuiTypography-root MuiTypography-h6 css-1je6kat-MuiTypography-root"
+      >
+        EPOCH 272
+      </h6>
+      <div
+        class="css-1rhchyf"
+      >
+        <span
+          aria-valuemax="100"
+          aria-valuemin="0"
+          aria-valuenow="19"
+          class="MuiLinearProgress-root MuiLinearProgress-colorSecondary MuiLinearProgress-determinate css-5js6s3-MuiLinearProgress-root"
+          role="progressbar"
+        >
+          <span
+            class="MuiLinearProgress-bar MuiLinearProgress-barColorSecondary MuiLinearProgress-bar1Determinate css-8m0zll-MuiLinearProgress-bar1"
+            style="transform: translateX(-81%);"
+          />
+        </span>
+      </div>
+      <h5
+        class="MuiTypography-root MuiTypography-h5 css-hynxzr-MuiTypography-root"
+      >
+        19%
+      </h5>
+      <span
+        class="MuiTypography-root MuiTypography-overline css-1vuxh5z-MuiTypography-root"
+      >
+        ETA: 2d 5h 16m 10s
+      </span>
+    </div>
+  </div>
+</DocumentFragment>
+`;

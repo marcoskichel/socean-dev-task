@@ -18,9 +18,10 @@ const inferOutcomeOptionFee = (
   stakedValue: number,
 ) => {
   const actualFee = opt.fee! / 100;
+  const formatedFee = 1 - actualFee;
   return {
     ...opt,
-    value: stakedValue * (1 - actualFee),
+    value: stakedValue * formatedFee,
   } as UnstakeOption;
 };
 

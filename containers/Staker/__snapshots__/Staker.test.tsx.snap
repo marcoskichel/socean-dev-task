@@ -1,0 +1,142 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Staker renders 1`] = `
+<DocumentFragment>
+  <div
+    class="css-1ootjse"
+  >
+    <div
+      class="css-1jke4yk"
+    >
+      <label
+        class="MuiInputLabel-root MuiInputLabel-animated MuiFormLabel-root MuiFormLabel-colorPrimary css-1j0ijkw-MuiFormLabel-root-MuiInputLabel-root"
+      >
+        Amount
+      </label>
+      <div
+        class="MuiFormControl-root MuiTextField-root css-1ybss1w-MuiFormControl-root-MuiTextField-root"
+      >
+        <div
+          class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-adornedStart MuiInputBase-adornedEnd css-oobokm-MuiInputBase-root-MuiOutlinedInput-root"
+        >
+          <div
+            class="css-1wowqjn"
+          >
+            <span
+              style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 32px; height: 32px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+            >
+              <img
+                alt="Currency"
+                data-nimg="fixed"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+              />
+              <noscript />
+            </span>
+          </div>
+          <input
+            aria-invalid="false"
+            class="MuiOutlinedInput-input MuiInputBase-input MuiInputBase-inputAdornedStart MuiInputBase-inputAdornedEnd css-vxvc7x-MuiInputBase-input-MuiOutlinedInput-input"
+            id="mui-1"
+            type="number"
+            value="0"
+          />
+          <div
+            class="css-1dqf7fm"
+          >
+            <span
+              class="MuiTypography-root MuiTypography-caption css-1ajvh0m-MuiTypography-root"
+            >
+              Balance: -
+            </span>
+            <button
+              class="MuiButton-root MuiButton-contained MuiButton-containedSecondary MuiButton-sizeSmall MuiButton-containedSizeSmall MuiButton-disableElevation MuiButtonBase-root  css-tf6vm2-MuiButtonBase-root-MuiButton-root"
+              tabindex="0"
+              type="button"
+            >
+              MAX
+              <span
+                class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+              />
+            </button>
+          </div>
+          <fieldset
+            aria-hidden="true"
+            class="MuiOutlinedInput-notchedOutline css-9425fu-MuiOutlinedInput-notchedOutline"
+          >
+            <legend
+              class="css-nnbavb"
+            >
+              <span
+                class="notranslate"
+              >
+                ​
+              </span>
+            </legend>
+          </fieldset>
+        </div>
+      </div>
+      <div
+        class="css-vvfmul"
+      >
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+          data-testid="ArrowDownwardIcon"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="m20 12-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
+          />
+        </svg>
+      </div>
+    </div>
+    <div
+      class="css-1j4sh83"
+    >
+      <span
+        class="MuiTypography-root MuiTypography-caption css-1kpht1s-MuiTypography-root"
+      >
+        You will get
+      </span>
+      <div
+        class="MuiBox-root css-0"
+      >
+        <span
+          class="MuiTypography-root MuiTypography-caption css-1kpht1s-MuiTypography-root"
+        >
+          0 scnSOL
+        </span>
+        <div
+          class="css-yabgz3"
+        >
+          <span
+            style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 26px; height: 26px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+          >
+            <img
+              alt="Currency"
+              data-nimg="fixed"
+              decoding="async"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+              style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+            />
+            <noscript />
+          </span>
+        </div>
+      </div>
+    </div>
+    <button
+      class="MuiButton-root MuiButton-contained MuiButton-containedSecondary MuiButton-sizeLarge MuiButton-containedSizeLarge MuiButton-disableElevation MuiButtonBase-root css-lmekah-MuiButtonBase-root-MuiButton-root"
+      tabindex="0"
+      type="button"
+    >
+      Connect Wallet
+      <span
+        class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+      />
+    </button>
+  </div>
+</DocumentFragment>
+`;

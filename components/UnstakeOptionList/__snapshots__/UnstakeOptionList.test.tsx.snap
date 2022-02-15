@@ -1,0 +1,321 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UnstakeOptionList displays the right selected item 1`] = `
+<DocumentFragment>
+  <ul
+    class="MuiList-root MuiList-padding css-h4y409-MuiList-root"
+  >
+    <div
+      class="MuiListItemButton-root MuiListItemButton-gutters MuiButtonBase-root css-zvqzn8-MuiButtonBase-root-MuiListItemButton-root"
+      role="button"
+      tabindex="0"
+    >
+      <div
+        class="css-1kxonj9"
+      >
+        <div
+          class="css-19s3t1h"
+        >
+          <span
+            class="MuiTypography-root MuiTypography-caption css-1sn4lm3-MuiTypography-root"
+          >
+            Test One
+          </span>
+          <div
+            class="css-70qvj9"
+          >
+            <div
+              class="css-cleg7o"
+            >
+              <span
+                style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 26px; height: 26px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+              >
+                <img
+                  alt="Currency"
+                  data-nimg="fixed"
+                  decoding="async"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                />
+                <noscript />
+              </span>
+            </div>
+            <h5
+              class="MuiTypography-root MuiTypography-h5 css-1kt30nm-MuiTypography-root"
+            >
+              1 SOL
+            </h5>
+            <span
+              class="MuiTypography-root MuiTypography-caption css-1sn4lm3-MuiTypography-root"
+            >
+              0.1% fee
+            </span>
+          </div>
+        </div>
+        <span
+          class="MuiCheckbox-root MuiCheckbox-colorSecondary MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorSecondary PrivateSwitchBase-root css-1p28g3s-MuiButtonBase-root-MuiCheckbox-root"
+        >
+          <input
+            class="PrivateSwitchBase-input css-1m9pwf3"
+            data-indeterminate="false"
+            type="checkbox"
+          />
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+            data-testid="CheckBoxOutlineBlankIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+            />
+          </svg>
+          <span
+            class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+          />
+        </span>
+      </div>
+      <span
+        class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+      />
+    </div>
+    <div
+      class="MuiListItemButton-root MuiListItemButton-gutters Mui-selected MuiButtonBase-root css-zvqzn8-MuiButtonBase-root-MuiListItemButton-root"
+      role="button"
+      tabindex="0"
+    >
+      <div
+        class="css-1kxonj9"
+      >
+        <div
+          class="css-19s3t1h"
+        >
+          <span
+            class="MuiTypography-root MuiTypography-caption css-1sn4lm3-MuiTypography-root"
+          >
+            Test Two
+          </span>
+          <div
+            class="css-70qvj9"
+          >
+            <div
+              class="css-cleg7o"
+            >
+              <span
+                style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 26px; height: 26px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+              >
+                <img
+                  alt="Currency"
+                  data-nimg="fixed"
+                  decoding="async"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                />
+                <noscript />
+              </span>
+            </div>
+            <h5
+              class="MuiTypography-root MuiTypography-h5 css-1kt30nm-MuiTypography-root"
+            >
+              2 SOL
+            </h5>
+            <span
+              class="MuiTypography-root MuiTypography-caption css-1sn4lm3-MuiTypography-root"
+            >
+              0.2% fee
+            </span>
+          </div>
+        </div>
+        <span
+          class="MuiCheckbox-root MuiCheckbox-colorSecondary MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorSecondary PrivateSwitchBase-root Mui-checked css-1p28g3s-MuiButtonBase-root-MuiCheckbox-root"
+        >
+          <input
+            checked=""
+            class="PrivateSwitchBase-input css-1m9pwf3"
+            data-indeterminate="false"
+            type="checkbox"
+          />
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+            data-testid="CheckBoxIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+            />
+          </svg>
+          <span
+            class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+          />
+        </span>
+      </div>
+      <span
+        class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+      />
+    </div>
+  </ul>
+</DocumentFragment>
+`;
+
+exports[`UnstakeOptionList renders 1`] = `
+<DocumentFragment>
+  <ul
+    class="MuiList-root MuiList-padding css-h4y409-MuiList-root"
+  >
+    <div
+      class="MuiListItemButton-root MuiListItemButton-gutters Mui-selected MuiButtonBase-root css-zvqzn8-MuiButtonBase-root-MuiListItemButton-root"
+      role="button"
+      tabindex="0"
+    >
+      <div
+        class="css-1kxonj9"
+      >
+        <div
+          class="css-19s3t1h"
+        >
+          <span
+            class="MuiTypography-root MuiTypography-caption css-1sn4lm3-MuiTypography-root"
+          >
+            Test One
+          </span>
+          <div
+            class="css-70qvj9"
+          >
+            <div
+              class="css-cleg7o"
+            >
+              <span
+                style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 26px; height: 26px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+              >
+                <img
+                  alt="Currency"
+                  data-nimg="fixed"
+                  decoding="async"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                />
+                <noscript />
+              </span>
+            </div>
+            <h5
+              class="MuiTypography-root MuiTypography-h5 css-1kt30nm-MuiTypography-root"
+            >
+              1 SOL
+            </h5>
+            <span
+              class="MuiTypography-root MuiTypography-caption css-1sn4lm3-MuiTypography-root"
+            >
+              0.1% fee
+            </span>
+          </div>
+        </div>
+        <span
+          class="MuiCheckbox-root MuiCheckbox-colorSecondary MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorSecondary PrivateSwitchBase-root Mui-checked css-1p28g3s-MuiButtonBase-root-MuiCheckbox-root"
+        >
+          <input
+            checked=""
+            class="PrivateSwitchBase-input css-1m9pwf3"
+            data-indeterminate="false"
+            type="checkbox"
+          />
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+            data-testid="CheckBoxIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+            />
+          </svg>
+          <span
+            class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+          />
+        </span>
+      </div>
+      <span
+        class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+      />
+    </div>
+    <div
+      class="MuiListItemButton-root MuiListItemButton-gutters MuiButtonBase-root css-zvqzn8-MuiButtonBase-root-MuiListItemButton-root"
+      role="button"
+      tabindex="0"
+    >
+      <div
+        class="css-1kxonj9"
+      >
+        <div
+          class="css-19s3t1h"
+        >
+          <span
+            class="MuiTypography-root MuiTypography-caption css-1sn4lm3-MuiTypography-root"
+          >
+            Test Two
+          </span>
+          <div
+            class="css-70qvj9"
+          >
+            <div
+              class="css-cleg7o"
+            >
+              <span
+                style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 26px; height: 26px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+              >
+                <img
+                  alt="Currency"
+                  data-nimg="fixed"
+                  decoding="async"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                />
+                <noscript />
+              </span>
+            </div>
+            <h5
+              class="MuiTypography-root MuiTypography-h5 css-1kt30nm-MuiTypography-root"
+            >
+              2 SOL
+            </h5>
+            <span
+              class="MuiTypography-root MuiTypography-caption css-1sn4lm3-MuiTypography-root"
+            >
+              0.2% fee
+            </span>
+          </div>
+        </div>
+        <span
+          class="MuiCheckbox-root MuiCheckbox-colorSecondary MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorSecondary PrivateSwitchBase-root css-1p28g3s-MuiButtonBase-root-MuiCheckbox-root"
+        >
+          <input
+            class="PrivateSwitchBase-input css-1m9pwf3"
+            data-indeterminate="false"
+            type="checkbox"
+          />
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+            data-testid="CheckBoxOutlineBlankIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+            />
+          </svg>
+          <span
+            class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+          />
+        </span>
+      </div>
+      <span
+        class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+      />
+    </div>
+  </ul>
+</DocumentFragment>
+`;
