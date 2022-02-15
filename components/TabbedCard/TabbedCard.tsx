@@ -1,5 +1,5 @@
 import { Card, CardContent, styled, Tab, Tabs } from '@mui/material';
-import { ReactElement, SyntheticEvent, useState, ReactNode } from 'react';
+import { ReactElement, ReactNode, SyntheticEvent } from 'react';
 
 const StyledCard = styled(Card)(() => ({
   '> div': { padding: 0 },
