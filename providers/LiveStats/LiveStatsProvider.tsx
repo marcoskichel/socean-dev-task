@@ -13,6 +13,11 @@ interface LiveStatsProviderProps {
   children: React.ReactNode;
 }
 
+/**
+ * Provide live stats data to the rest of the app.
+ *
+ * Even though this is just a POC, I decided to use a context for this info as it would likely come from an API
+ */
 const LiveStatsProvider = (props: LiveStatsProviderProps) => {
   const { children } = props;
 

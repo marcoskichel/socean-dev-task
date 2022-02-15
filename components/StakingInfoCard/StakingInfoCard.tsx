@@ -17,6 +17,9 @@ const StyledCardContent = styled(CardContent)(() => ({
   gap: '1rem',
 }));
 
+/**
+ * A card containing explaining benefits for staking SOL in the Socean Pool.
+ */
 const StakingInfoCard = () => {
   const theme = useTheme();
 

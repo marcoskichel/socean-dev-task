@@ -25,6 +25,9 @@ const getSrc = (currency: Currency) => {
   }
 };
 
+/**
+ * Displays a icon for the given currency.
+ */
 const CurrencyIcon = (props: Props) => {
   const { currency, sx, height = 32, width = 32 } = props;
   const src = getSrc(currency);

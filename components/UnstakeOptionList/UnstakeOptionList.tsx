@@ -8,6 +8,9 @@ interface Props {
   onChange?: (value: string) => void;
 }
 
+/**
+ * The list of unstaking options which the user can select from.
+ */
 const UnstakeOptionList = (props: Props) => {
   const { options, onChange = () => {}, selectedId } = props;
 

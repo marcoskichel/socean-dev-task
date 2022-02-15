@@ -30,7 +30,7 @@ interface Props {
 }
 
 /**
- * A card with tabs
+ * A card with tabs to display different content for each one.
  */
 const TabbedCard = (props: Props) => {
   const { tabs, onTabChange = () => {}, selectedTab = 0 } = props;

@@ -84,6 +84,9 @@ interface Props {
   onChange?: (value: string) => void;
 }
 
+/**
+ * A stlyled text field with an arrow down icon and a currency icon prefix.
+ */
 const StakeInput = (props: Props) => {
   const { onChange = () => {}, value = '0', currency = Currency.SOL } = props;
 
