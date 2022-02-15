@@ -42,6 +42,7 @@ const theme: Theme = createTheme({
         sx: {
           borderRadius: '0.75rem',
           backgroundColor: '#333333',
+          padding: '1rem 1.5rem',
           '&:not(:last-child)': {
             marginBottom: '0.5rem',
           },

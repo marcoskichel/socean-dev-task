@@ -87,7 +87,7 @@ const StakeInput = (props: Props) => {
   const { onChange, value } = props;
 
   /**
-   * Avoid negative values
+   * Avoid negative values as MUI doesn't support HTML min attribute.
    * @param event The event object
    */
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {

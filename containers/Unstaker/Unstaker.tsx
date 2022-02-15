@@ -25,8 +25,8 @@ const inferOutcomeOptionFee = (
 };
 
 const options: Array<Partial<UnstakeOption>> = [
-  { label: 'Instant Unstake', fee: 0.3 },
-  { label: 'Unstake in ~2 days', fee: 0 },
+  { id: 'instant', label: 'Instant Unstake', fee: 0.3 },
+  { id: 'two-days', label: 'Unstake in ~2 days', fee: 0 },
 ];
 
 const Unstaker = () => {
@@ -37,7 +37,15 @@ const Unstaker = () => {
     return options.map((opt) => inferOutcomeOptionFee(opt, stakedValue));
   }, [amount]);
 
-  const handleChange = (value: string) => {
+  const [selectedOptionId, setSelectedOptionId] = useState(
+    options[options.length - 1].id,
+  );
+
+  const handleUnstakeOptionSelect = (optionId: string) => {
+    setSelectedOptionId(optionId);
+  };
+
+  const handleAmountChange = (value: string) => {
     setAmount(value);
   };
 
@@ -46,16 +54,20 @@ const Unstaker = () => {
       <StakeInput
         currency={Currency.scnSOL}
         value={amount}
-        onChange={handleChange}
+        onChange={handleAmountChange}
       />
-      <UnstakeOptionList options={parsedOptions} />
+      <UnstakeOptionList
+        selectedId={selectedOptionId!}
+        onChange={handleUnstakeOptionSelect}
+        options={parsedOptions}
+      />
       <FatButton
         color="secondary"
         variant="contained"
         size="large"
         disableElevation
       >
-        Connect Wallet
+        Unstake scnSOL
       </FatButton>
     </Root>
   );

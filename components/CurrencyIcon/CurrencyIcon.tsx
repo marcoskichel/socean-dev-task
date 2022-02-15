@@ -34,7 +34,13 @@ const CurrencyIcon = (props: Props) => {
   const src = getSrc(currency);
   return (
     <Wrapper sx={sx}>
-      <Image src={src} alt="Currency" width={width} height={height} />
+      <Image
+        src={src}
+        alt="Currency"
+        width={width}
+        height={height}
+        layout="fixed"
+      />
     </Wrapper>
   );
 };

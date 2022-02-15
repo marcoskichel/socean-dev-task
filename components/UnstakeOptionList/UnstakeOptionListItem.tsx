@@ -30,11 +30,28 @@ const Value = styled(Typography)(() => ({
   marginRight: '1rem',
 }));
 
-const UnstakeOptionListItem = (props: UnstakeOption) => {
-  const { label, fee, value } = props;
+const StyledListItem = styled(ListItemButton)(() => ({
+  '&.Mui-selected': {
+    background: 'rgba(242, 79, 131, 0.1)',
+    border: '1px solid rgba(242, 79, 131, 0.75)',
+  },
+}));
+
+type Props = UnstakeOption & {
+  id: string;
+  selected: boolean;
+  onSelect: (value: string) => void;
+};
+
+const UnstakeOptionListItem = (props: Props) => {
+  const { id, label, fee, value, selected, onSelect } = props;
+
+  const handleSelect = () => {
+    onSelect(id);
+  };
 
   return (
-    <ListItemButton key={label}>
+    <StyledListItem selected={selected} onClick={handleSelect}>
       <Wrapper>
         <Content>
           <Typography variant="caption">{label}</Typography>
@@ -49,9 +66,13 @@ const UnstakeOptionListItem = (props: UnstakeOption) => {
             <Typography variant="caption">{`${fee}% fee`}</Typography>
           </Description>
         </Content>
-        <OutcomeOptionCheckbox color="secondary" />
+        <OutcomeOptionCheckbox
+          color="secondary"
+          onSelect={handleSelect}
+          checked={selected}
+        />
       </Wrapper>
-    </ListItemButton>
+    </StyledListItem>
   );
 };
 
