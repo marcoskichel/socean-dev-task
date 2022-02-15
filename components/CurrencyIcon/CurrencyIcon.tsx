@@ -1,15 +1,11 @@
 import { styled, SxProps, Theme } from '@mui/material';
 import Image from 'next/image';
+import { Currency } from '../../types/Currency';
 
 const Wrapper = styled('div')(() => ({
   paddingBottom: '0.9rem',
   paddingRight: '0.9rem',
 }));
-
-export enum Currency {
-  SOL = 'SOL',
-  scnSOL = 'scnSOL',
-}
 
 interface Props {
   currency: Currency;

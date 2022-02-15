@@ -6,7 +6,8 @@ import {
   TextField,
   Typography,
 } from '@mui/material';
-import CurrencyIcon, { Currency } from '../CurrencyIcon/CurrencyIcon';
+import { Currency } from '../../types/Currency';
+import CurrencyIcon from '../CurrencyIcon/CurrencyIcon';
 
 // Styles
 
@@ -78,13 +79,13 @@ const ArrowDown = () => {
 };
 
 interface Props {
-  value: string;
-  currency: Currency;
-  onChange: (value: string) => void;
+  value?: string;
+  currency?: Currency;
+  onChange?: (value: string) => void;
 }
 
 const StakeInput = (props: Props) => {
-  const { onChange, value } = props;
+  const { onChange = () => {}, value = '0', currency = Currency.SOL } = props;
 
   /**
    * Avoid negative values as MUI doesn't support HTML min attribute.
@@ -102,7 +103,7 @@ const StakeInput = (props: Props) => {
     }
   };
 
-  const startAdornment = <CurrencyIcon currency={props.currency} />;
+  const startAdornment = <CurrencyIcon currency={currency} />;
 
   const endAdornment = (
     <EndAdornmentWrapper>

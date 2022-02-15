@@ -18,22 +18,22 @@ const StyledCardContent = styled(CardContent)(() => ({
   },
 }));
 
-interface TabData {
+export interface TabData {
   label: string | ReactNode;
   Component: () => ReactElement;
 }
 
 interface Props {
   tabs: TabData[];
-  selectedTab: number;
-  onTabChange: (value: number) => void;
+  selectedTab?: number;
+  onTabChange?: (value: number) => void;
 }
 
 /**
  * A card with tabs
  */
 const TabbedCard = (props: Props) => {
-  const { tabs, onTabChange, selectedTab } = props;
+  const { tabs, onTabChange = () => {}, selectedTab = 0 } = props;
 
   const handleTabChange = (event: SyntheticEvent, newValue: number) => {
     onTabChange(newValue);

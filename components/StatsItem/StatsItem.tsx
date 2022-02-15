@@ -34,7 +34,7 @@ const Root = styled('div')(({ theme }) => ({
   [theme.breakpoints.up('md')]: {
     borderRadius: 0,
   },
-  '&:first-child': {
+  '&:first-of-type': {
     borderTopLeftRadius: '1.5rem',
     borderBottomLeftRadius: '1.5rem',
   },

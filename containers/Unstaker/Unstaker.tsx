@@ -1,9 +1,9 @@
 import { styled } from '@mui/material';
 import { useMemo, useState } from 'react';
-import { Currency } from '../../components/CurrencyIcon/CurrencyIcon';
 import FatButton from '../../components/FatButton/FatButton';
 import StakeInput from '../../components/StakeInput/StakeInput';
 import UnstakeOptionList from '../../components/UnstakeOptionList/UnstakeOptionList';
+import { Currency } from '../../types/Currency';
 import { UnstakeOption } from '../../types/UnstakeOption';
 
 const Root = styled('div')(() => ({

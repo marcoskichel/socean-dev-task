@@ -1,6 +1,7 @@
 import { Checkbox, ListItemButton, styled, Typography } from '@mui/material';
+import { Currency } from '../../types/Currency';
 import { UnstakeOption } from '../../types/UnstakeOption';
-import CurrencyIcon, { Currency } from '../CurrencyIcon/CurrencyIcon';
+import CurrencyIcon from '../CurrencyIcon/CurrencyIcon';
 
 const Wrapper = styled('div')(() => ({
   width: '100%',

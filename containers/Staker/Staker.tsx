@@ -1,10 +1,9 @@
 import { Box, styled, Typography } from '@mui/material';
 import { useEffect, useState } from 'react';
-import CurrencyIcon, {
-  Currency,
-} from '../../components/CurrencyIcon/CurrencyIcon';
+import CurrencyIcon from '../../components/CurrencyIcon/CurrencyIcon';
 import FatButton from '../../components/FatButton/FatButton';
 import StakeInput from '../../components/StakeInput/StakeInput';
+import { Currency } from '../../types/Currency';
 
 const Root = styled('div')(() => ({
   display: 'flex',
