@@ -1,6 +1,7 @@
 import { Box, Container, styled, Typography, Chip } from '@mui/material';
 import type { NextPage } from 'next';
 import Head from 'next/head';
+import { useState } from 'react';
 import StakingInfoCard from '../components/StakingInfoCard/StakingInfoCard';
 import TabbedCard from '../components/TabbedCard/TabbedCard';
 import LiveStats from '../containers/LiveStats/LiveStats';
@@ -70,17 +71,19 @@ const StyledChip = styled(Chip)(() => ({
 
 // Components
 
-const Footer = () => {
+const Footer = ({ currentTab }: { currentTab: number }) => {
   return (
     <FooterContainer>
       <FooterItem>
         <FooterLabel>Exchange rate:</FooterLabel>
         <FooterValue>1 SOL = 0.976 scnSOL</FooterValue>
       </FooterItem>
-      <FooterItem>
-        <FooterLabel>Deposit fees:</FooterLabel>
-        <FooterValue>0.15%</FooterValue>
-      </FooterItem>
+      {currentTab === 0 && (
+        <FooterItem>
+          <FooterLabel>Deposit fees:</FooterLabel>
+          <FooterValue>0.15%</FooterValue>
+        </FooterItem>
+      )}
     </FooterContainer>
   );
 };
@@ -95,6 +98,8 @@ const StakeLabel = () => {
 };
 
 const Home: NextPage = () => {
+  const [selectedTab, setSelectedTab] = useState(0);
+
   return (
     <div>
       <Head>
@@ -113,12 +118,14 @@ const Home: NextPage = () => {
         <ContentSection>
           <Box>
             <TabbedCard
+              selectedTab={selectedTab}
+              onTabChange={setSelectedTab}
               tabs={[
                 { label: <StakeLabel />, Component: Staker },
                 { label: 'Unstake', Component: Unstaker },
               ]}
             />
-            <Footer />
+            <Footer currentTab={selectedTab} />
           </Box>
           <StakingInfoCard />
         </ContentSection>

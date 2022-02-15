@@ -25,27 +25,28 @@ interface TabData {
 
 interface Props {
   tabs: TabData[];
+  selectedTab: number;
+  onTabChange: (value: number) => void;
 }
 
 /**
  * A card with tabs
  */
 const TabbedCard = (props: Props) => {
-  const { tabs } = props;
-  const [currentTab, setCurrentTab] = useState<number>(0);
+  const { tabs, onTabChange, selectedTab } = props;
 
   const handleTabChange = (event: SyntheticEvent, newValue: number) => {
-    setCurrentTab(newValue);
+    onTabChange(newValue);
   };
 
-  const CurrentTabContent = tabs[currentTab]?.Component;
+  const CurrentTabContent = tabs[selectedTab]?.Component;
 
   return (
     <StyledCard>
       <StyledCardContent>
         <StyledTabs
           variant="fullWidth"
-          value={currentTab}
+          value={selectedTab}
           onChange={handleTabChange}
         >
           {tabs.map((tab, index) => (
